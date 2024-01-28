@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #353535;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    position: relative;
+    grid-gap: 20px;
+    justify-items: center;
+    align-content: space-between;
+    padding: 50px;
+}
+
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+}
+.board .cell{
+    background: #3c6e71;
+    padding: 50px 10px;
+    margin: 2px;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0.5px 0.5px 1.8px 0.5px #d9d9d9;
+}
+.board .cell:hover{
+    background: #284b63;
+}
+.status h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+}
+.status button{
+    background: #3c6e71;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+}
+.status button:active{
+    padding: 8px 18px;
+}
+.headText{
+    margin: 10px auto;
+    color: transparent;
+    font-size: 30px;
+    background-image: linear-gradient(#FFFFEA , #284b63);
+    background-clip: text;
+    background-repeat: no-repeat;
+    -webkit-text-stroke: 0.5px #284b63;
+    background-position: -15em,0 ;
+    animation: color 8s linear infinite alternate;
+}
+@keyframes color{
+    100%{
+        background-position: 15em,0 ;
+    }
+}
