@@ -5,12 +5,13 @@
 }
 
 body{
-    background: #353535;
+    background: #264653;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 }
 
 .container{
@@ -31,7 +32,7 @@ body{
 .board .cell{
     background: #3c6e71;
     padding: 50px 10px;
-    margin: 2px;
+    margin: 3px;
     cursor: pointer;
     text-align: center;
     color: #ffffff;
@@ -49,8 +50,7 @@ body{
     color: #ffffff;
     text-align: center;
 }
-.status button{
-    background: #3c6e71;
+.status .rest, .status .newGame{
     padding: 10px 20px;
     margin: 20px 10px;
     cursor: pointer;
@@ -61,6 +61,13 @@ body{
     border: none;
     border-radius: 4px;
 }
+.status .rest{
+    background-color: #2a9d8f ;
+}
+.status .newGame{
+    background-color: #e76f51;
+}
+
 .status button:active{
     padding: 8px 18px;
 }
